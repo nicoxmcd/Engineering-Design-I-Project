@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>Main Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://w3s.sxisa.org/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://miro.medium.com/max/2800/1*PDQznFmgLBjBRWgtFEP98A.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#GAME" class="w3-button w3-block w3-black">GAME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#MODEL" class="w3-button w3-block w3-black">MODEL</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#LABVIEW" class="w3-button w3-block w3-black">LABVIEW</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#CONTRIBUTION" class="w3-button w3-block w3-black">CONTRIBUTION</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">E121 U3 final project</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Snake<br>Game</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">jeena, nicole, johnathan</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="DESCRIPTION">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">DESCRIPTION</span></h5>
+    <p>This snake game is a V.I of a product which would change the visualization of a virtual game based on the player’s environment: humidity, temperature, and light. This sensor will help the player enjoy the game more vibrantly. </p>
+    <p>Snake decoration is a component that represents the snake game and it detects the player's environment. It is built through SolidWorks and enclosed for electronics properly without letting anything damage and as well as making it waterproof, but allowing the humidity sensor to collect data. The snake sensor will be deployed outdoors. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Information of the Demonstration Game.</p>
+      <p><strong> Duration of the data collection:</strong> 24 hours</p>
+      <p><strong> Location:</strong> 15 Adr street, 5015, NY</p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="METHODOLOGY">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">METHODOLOGY</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+  </div>
+</div>
+
+<!-- GAME -->
+<div class="w3-container" id="GAME">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h5><span class="w3-tag w3-wide">SNAKE GAME</span></h5>
+        <p><i>Game Instruction</i></p>
+        <p>LabView interprets the collected data from the Snake Sensor to the Snake Game.</p>
+      <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>
+  </div>
+</div>
+
+<!-- MODEL -->
+<div class="w3-container" id="MODEL">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h5><span class="w3-tag w3-wide">MODEL</span></h5>
+      <p>Snake Sensor detects the player's surrounding and connects it with the game. <br> This will be displayed outdoor.</p>
+      <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>
+  </div>
+</div>
+
+<!-- LABVIEW -->
+<div class="w3-container" id="LABVIEW">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h5><span class="w3-tag w3-wide">LABVIEW VI</span></h5>
+      <p>LabView interprets the collected data from the Snake Sensor to the Snake Game.</p>
+      <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>
+  </div>
+</div>    
+
+<!-- CONTRIBUTION -->
+<div class="w3-container" id="CONTRIBUTION">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h5><span class="w3-tag w3-wide">CONTRIBUTIONS</span></h5>
+      <p>Meet the contributors of this project.</p>
+      <div class="w3-row"><br>
+  
+      <div class="w3-third">
+        <img src="https://item.kakaocdn.net/do/a3f71a301d363f57dc069aa14d284ae2617ea012db208c18f6e83b1a90a7baa7" alt="Website and Game Designer" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Jeena Park</h3>
+        <p>Website and Game Designer</p>
+        <p class = "w3-opacity">jpark26@stevens.edu</p>
+      </div>
+  
+      <div class="w3-third">
+        <img src="https://item.kakaocdn.net/do/720c3111d94307c074c2851405b3e38b617ea012db208c18f6e83b1a90a7baa7" alt="3D Model Designer" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Nicole McDermott</h3>
+        <p>3D Model Designer</p>
+        <p class = "w3-opacity">nmcderm1@stevens.edu</p>
+      </div>
+  
+      <div class="w3-third">
+        <img src="https://www.vippng.com/png/full/451-4516770_emoticon-kakaotalk-sticker-tuzki-rabbit-png-free-photo.png" alt="VI Conductor and Designer" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Johnathan Solorzano</h3>
+        <p>VI Conductor and Designer</p>
+        <p class = "w3-opacity">jsolorz1@stevens.edu</p>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://w3s.sxisa.org/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
